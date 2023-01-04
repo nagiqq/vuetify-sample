@@ -71,7 +71,7 @@
                     </li>
                     <li  class="pa-2 ma-2">
                       <p> <v-btn
-                          color="red-darken-2" @click="copy(item.value)">yarn add vuetify@next sass</v-btn></p>
+                          color="green-darken-2" @click="copy(item.value)">yarn add vuetify@next sass</v-btn></p>
                       <br>
                       <p>@ /plugins/vuetify.js</p>
                       <p> import { createVuetify } from 'vuetify'</p>
@@ -108,7 +108,7 @@
                     <li class="pa-2 ma-2">
                       <p>Integrate Vuetify's mdi icons</p>
                       <p><v-btn
-                          color="red-darken-2" @click="copy(item2.value)">yarn add @mdi/font</v-btn></p>
+                          color="green-darken-2" @click="copy(item2.value)">yarn add @mdi/font</v-btn></p>
                       <br>
                       <p>// nuxt.config.ts</p>
                       <p>import {defineNuxtConfig} from 'nuxt'</p>
@@ -130,7 +130,7 @@
     </v-container>
 
     <div class="px-4 py-2 text-center w-100">
-      {{ new Date().getFullYear() }} — <strong>Vuetify</strong>
+      {{ new Date().getFullYear() }} — <strong><a href="/test">Vuetify</a></strong>
       <p> ps. html icon - <a href="https://www.w3schools.com/charsets/ref_emoji.asp">https://www.w3schools.com/charsets/ref_emoji.asp</a></p>
     </div>
   </div>
