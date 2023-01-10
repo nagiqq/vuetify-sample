@@ -7,7 +7,7 @@ export default defineNuxtConfig({
     build: {
         transpile: ['vuetify'],
     },
-    modules: ['@pinia/nuxt'],
+    modules: ['@pinia/nuxt','@nuxt/content'],
     vite: {
         define: {
             'process.env.DEBUG': false,

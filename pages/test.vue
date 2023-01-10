@@ -28,9 +28,14 @@
             <a href="#section3"> How to use Vuetify with Nuxt 3 </a>
           </template>
         </v-list-item>
-        <v-list-item prepend-icon="mdi-flask">
+        <v-list-item prepend-icon="mdi-movie-roll">
           <template v-slot:title>
             <a href="#section4"> ESLint + Prettier 環境建置 </a>
+          </template>
+        </v-list-item>
+        <v-list-item prepend-icon="mdi-routes">
+          <template v-slot:title>
+            <a href="#section5"> content </a>
           </template>
         </v-list-item>
       </v-list>
@@ -46,8 +51,8 @@
         </v-chip>
       </div>
     </v-navigation-drawer>
-
     <v-main>
+      <ArticleContent1/>
       <v-card id="section1" class="mx-auto" prepend-icon="mdi-minecraft">
         <template v-slot:title>
           <span> nuxt3 官方文件 </span>
@@ -141,7 +146,7 @@
           </ol>
         </v-card-text>
       </v-card>
-      <v-card id="section4" prepend-icon="mdi-flask">
+      <v-card id="section4" prepend-icon="mdi-movie-roll">
         <template v-slot:title>
           <span> ESLint + Prettier 環境建置 </span>
         </template>
@@ -195,6 +200,46 @@
               <p>trailingComma: 'none' // 如 Object、Array 內的元素不需要尾隨逗號</p>
               <p>}</p>
             </li>
+          </ol>
+        </v-card-text>
+      </v-card>
+      <v-card id="section5" prepend-icon="mdi-routes">
+        <template v-slot:title>
+          <span> content </span>
+        </template>
+
+        <v-card-text>
+          <ol>
+            <li class="pa-2 ma-2">
+              <a href="https://content.nuxtjs.org/get-started">
+                https://content.nuxtjs.org/get-started
+              </a>
+            </li>
+            <li class="pa-2 ma-2">
+              <p>
+                <v-btn class="my-2" @click="copy(item3.value)"
+                  >yarn add --dev @nuxt/content
+                </v-btn>
+              </p>
+              <br />
+              <p>.eslintrc.js</p>
+              <p>module.exports = {</p>
+              <p>env: {</p>
+              <p>browser: true,</p>
+              <p>es2021: true</p>
+              <p>},</p>
+              <p>extends: ['@nuxtjs', 'plugin:vue/vue3-recommended', 'prettier'],</p>
+              <p>parserOptions: {</p>
+              <p>ecmaVersion: 13,</p>
+              <p>sourceType: 'module'</p>
+              <p>},</p>
+              <p>plugins: ['prettier'],</p>
+              <p>rules: {</p>
+              <p>'no-undef': 'off'</p>
+              <p>}</p>
+              <p>}</p>
+            </li>
+
           </ol>
         </v-card-text>
       </v-card>

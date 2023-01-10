@@ -128,7 +128,6 @@
         </v-col>
       </v-row>
     </v-container>
-
     <div class="px-4 py-2 text-center w-100">
       {{ new Date().getFullYear() }} — <strong><a href="/test">Vuetify</a></strong>
       <p> ps. html icon - <a href="https://www.w3schools.com/charsets/ref_emoji.asp">https://www.w3schools.com/charsets/ref_emoji.asp</a></p>
@@ -148,6 +147,8 @@ const item2 = ref('yarn add @mdi/font')
 
 const start1 = ref('npx nuxi init "project-name"')
 const start2 = ref('yarn install')
+
+
 </script>
 
 <style scoped>
