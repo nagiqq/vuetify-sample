@@ -1,0 +1,17 @@
+{
+  "title": "content",
+  "icon": "mdi-routes",
+  "button": [
+    {
+      "id": 1,
+      "title": "yarn add --dev @nuxt/content"
+    }
+  ],
+  "link": [
+    {
+      "title": "https://content.nuxtjs.org/get-started"
+    }
+  ],
+  "description": " <p>//.eslintrc.js</p>\n              <p>module.exports = {</p>\n              <p>env: {</p>\n              <p>browser: true,</p>\n              <p>es2021: true</p>\n              <p>},</p>\n              <p>extends: ['@nuxtjs', 'plugin:vue/vue3-recommended', 'prettier'],</p>\n              <p>parserOptions: {</p>\n              <p>ecmaVersion: 13,</p>\n              <p>sourceType: 'module'</p>\n              <p>},</p>\n              <p>plugins: ['prettier'],</p>\n              <p>rules: {</p>\n              <p>'no-undef': 'off'</p>\n              <p>}</p>\n              <p>}</p>"
+}
+

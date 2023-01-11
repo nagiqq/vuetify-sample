@@ -1,0 +1,8 @@
+{
+  "title": "nuxt3 官方文件",
+  "icon": "mdi-minecraft",
+  "button": [{"id":1, "title": "npx nuxi init <project-name>"}, {"id":2,"title": "yarn install"}],
+  "link": [{"title": "https://nuxt.com/docs/getting-started/introduction"}],
+  "description": ""
+}
+

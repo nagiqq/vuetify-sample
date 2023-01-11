@@ -1,0 +1,21 @@
+{
+  "title": "How to use Vuetify with Nuxt 3 & Integrate Vuetifys mdi icons",
+  "icon": "mdi-flask",
+  "button": [
+    {
+      "id": 1,
+      "title": "yarn add vuetify@next sass"
+    },
+    {
+      "id": 2,
+      "title": "yarn add @mdi/font"
+    }
+  ],
+  "link": [
+    {
+      "title": "https://codybontecou.com/how-to-use-vuetify-with-nuxt-3.html"
+    }
+  ],
+  "description": "<p>@ /plugins/vuetify.js</p>\n  <p>import {\n  createVuetify\n} from 'uetify'/p>\n<p>import * as components from 'uetify/components'/p>\n<p>import * as directives from 'uetify/directives'/p>\n<p>export default defineNuxtPlugin(nuxtApp => {\n  </p>\n  <p>const\n  vuetify\n  =\n  createVuetify({\n  </p>\n  <p>components,\n  </p>\n  <p>directives,\n  </p>\n  <p>\n})</p>\n<p>nuxtApp.vueApp.use(vuetify)</p>\n<p>})</p><br/> </p>\n<br />\n<p>@/ nuxt.config.ts</p>\n<p>import {\ndefineNuxtConfig } from 'nuxt'/p>\n<p>// https: //v3.nuxtjs.org/api/configuration/nuxt.config</p>\n<p>export default defineNuxtConfig({\n</p>\n<p>css: [\n'uetify/lib/styles/main.sass', </p>\n<p>build: {\n</p>\n<p>transpile: [\n'uetify', </p>\n<p>\n}, </p>\n<p>vite: {\n</p>\n<p>define: {</p>\n<p>'rocess.env.DEBUG' false, </p>\n<p>}, </p>\n<p>}, </p>\n<p>})</p>\n<br/>  <p>@/ nuxt.config.ts</p>\n<p>import {\ndefineNuxtConfig\n} from 'nuxt'/p>\n<p>export default defineNuxtConfig({\n</p>\n<p>css: [\n</p>\n<p>'@mdi/font/css/materialdesignicons.min.css', </p>\n<p>\n], </p>\n<p>\n})</p>"
+}
+

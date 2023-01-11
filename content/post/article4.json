@@ -1,0 +1,24 @@
+{
+  "title": "ESLint + Prettier 環境建置",
+  "icon": "mdi-movie-roll",
+  "button": [
+    {
+      "id": 1,
+      "title": "yarn add eslint @nuxtjs/eslint-config-typescript eslint-plugin-vue"
+    },
+    {
+      "id": 2,
+      "title": "yarn add prettier eslint-config-prettier eslint-plugin-prettier"
+    }
+  ],
+  "link": [
+    {
+      "title": "https://ithelp.ithome.com.tw/articles/10294145"
+    },
+    {
+      "title": "https://prettier.io/docs/en/options.html"
+    }
+  ],
+  "description": " <p>//.eslintrc.js</p>\n              <p>module.exports = {</p>\n              <p>env: {</p>\n              <p>browser: true,</p>\n              <p>es2021: true</p>\n              <p>},</p>\n              <p>extends: ['@nuxtjs', 'plugin:vue/vue3-recommended', 'prettier'],</p>\n              <p>parserOptions: {</p>\n              <p>ecmaVersion: 13,</p>\n              <p>sourceType: 'module'</p>\n              <p>},</p>\n              <p>plugins: ['prettier'],</p>\n              <p>rules: {</p>\n              <p>'no-undef': 'off'</p>\n              <p>}</p>\n              <p>}</p><br/>  <p>//.prettierrc.js</p>\n              <p>module.exports = {</p>\n              <p>printWidth: 100, // 每行文字數量達 100 字元就換到新的一行</p>\n              <p>semi: false, // 每個語句的結尾不需要分號</p>\n              <p>singleQuote: true, // 字串使用單引號，而不是雙引號</p>\n              <p>trailingComma: 'none' // 如 Object、Array 內的元素不需要尾隨逗號</p>\n              <p>}</p>"
+}
+

@@ -52,7 +52,6 @@
       </div>
     </v-navigation-drawer>
     <v-main>
-      <ArticleContent1/>
       <v-card id="section1" class="mx-auto" prepend-icon="mdi-minecraft">
         <template v-slot:title>
           <span> nuxt3 官方文件 </span>
@@ -63,10 +62,10 @@
             https://nuxt.com/docs/getting-started/introduction
           </a>
           <p>
-            <v-btn class="my-2" @click="copy(start1)">npx nuxi init "project-name"</v-btn>
+            <v-btn class="my-2" @click="copyClip" title="npx nuxi init <project-name>">npx nuxi init "project-name"</v-btn>
           </p>
           <p>
-            <v-btn class="my-2" @click="copy(start2)">yarn install</v-btn>
+            <v-btn class="my-2" @click="copyClip" title="yarn install">yarn install</v-btn>
           </p>
         </v-card-text>
       </v-card>
@@ -243,6 +242,8 @@
           </ol>
         </v-card-text>
       </v-card>
+
+
       <div class="px-4 py-2 text-center w-100">
         {{ new Date().getFullYear() }} — <strong><a href="/">Vuetify</a></strong>
         <p>
@@ -267,14 +268,13 @@ import { useClipboard } from '@vueuse/core'
 
 const { copy, copied } = useClipboard()
 
-const item = ref('yarn add vuetify@next sass')
-const item2 = ref('yarn add @mdi/font')
+const source = ref('')
+function copyClip(event) {
+  console.log(event.target.title);
+  source.value = event.target.title
+  copy(source.value)
+}
 
-const item3 = ref('yarn add eslint @nuxtjs/eslint-config-typescript eslint-plugin-vue')
-const item4 = ref('yarn add prettier eslint-config-prettier eslint-plugin-prettier')
-
-const start1 = ref('npx nuxi init "project-name"')
-const start2 = ref('yarn install')
 
 import { useFiltersStore } from '~/store/filter'
 
