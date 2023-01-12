@@ -153,7 +153,7 @@
         <v-card-text>
           <ol>
             <li class="pa-2 ma-2">
-              <a href="https://ithelp.ithome.com.tw/articles/10294145">
+              <a href="https://ithelp.ithome.com.tw/articles/10294145" >
                 https://ithelp.ithome.com.tw/articles/10294145
               </a>
               <a href="https://prettier.io/docs/en/options.html">
